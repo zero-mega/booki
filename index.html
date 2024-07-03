@@ -22,18 +22,52 @@
 
   <body>
     <div class="main-container">
-     
-        <header>
+      <header>
+        <!-- On creer la zone de menu -->
         <nav>
-        <img src="/images/logo/Booki.png" alt="logo" height="19px" width="61px">
-        <div class="menu">
+          <!-- On importe le logo -->
+          <img
+            src="/images/logo/Booki.png"
+            alt="logo"
+            height="19px"
+            width="61.09px"
+          />
+          <!-- On creer le menu avec les 2 liens -->
+          <div class="menu">
             <a href="#">Hebergements</a>
             <a href="#">Activités</a>
-        </div>
+          </div>
         </nav>
       </header>
 
       <main>
+        <!-- On creer la zone de recherche -->
+        <div class="search">
+          
+          <div class="search-label">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
+          </div>
+
+          <!-- On creer la barre de recherche -->
+          <div class="search-bar">
+            <!-- On creer la case pour l'icone -->
+            <div class="geo-icon"></div>
+            <input type="search" id="site-search" name="q" />
+            <button>Rechercher</button>
+          </div>
+
+          <!-- On creer la zone de filtres -->
+          <div class="filtres">
+            <span>Filtres</span>
+            <a href="#" class="filter-button">Economique</a>
+            <a href="#" class="filter-button">Familial</a>
+            <a href="#" class="filter-button">Romantique</a>
+            <a href="#" class="filter-button">Nos Pépites</a>
+          </div>
+
+        </div>
+
         <div class="hebergements-and-populaires">
           <section class="hebergements"></section>
           <section class="populaires">
