@@ -41,6 +41,12 @@ nav img {
   padding-top: 16px;
 }
 
+.menu a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
 .main-container {
   width: 100%;
   max-width: 1440px;
@@ -70,7 +76,6 @@ nav img {
 .search-bar input {
   border: none;
 }
-
 
 /* On definis la taille de police et l'espacement avec le texte selon la maquette */
 
@@ -104,7 +109,7 @@ nav img {
   text-align: center;
   color: white;
 }
-
+/* On passe la zone en flex pour placer les boutons */
 .filtres {
   display: flex;
   align-items: center;
@@ -122,7 +127,7 @@ a {
   font-weight: 700;
   font-size: 18px;
 }
-
+/* On fais le style des boutons */
 .filter-button {
   border: 2px solid #d9d9d9;
   border-radius: 25px;
@@ -131,6 +136,28 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* on passe la zone infos en flex pour placer l'icone et le texte */
+.infos {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  gap: 10px;
+}
+/* On stylise la case de l'icone info */
+.info-icon {
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+}
+
+.info-icon p {
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
 }
 
 a {
@@ -227,6 +254,16 @@ a {
 
 .populaires-cards .card-rating {
   margin-bottom: 5px;
+}
+
+.activites {
+  height: 559.02px;
+  border: 1px solid red;
+}
+/* On definis la hauteur et la couleur de la zone footer */
+footer {
+  height: 163px;
+  background: #f2f2f2;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
