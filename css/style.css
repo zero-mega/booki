@@ -65,38 +65,62 @@ nav img {
 /* On passe la search bar en flex pour gerer les 3 elements */
 .search-bar {
   display: flex;
-  gap: 24px;
   width: 377px;
   height: 49px;
   background: #ffffff;
   border: 1px solid #f2f2f2;
   border-radius: 15px;
 }
-/* On enleve la bordure par defaut de l'input de recherche */
+/* On enleve la bordure par defaut de l'input de recherche et on le stylise */
 .search-bar input {
   border: none;
+  width: 195px;
+  height: 49px;
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  text-indent:20px;
+}
+
+/* On retire la bordure noire au focus */
+.search-bar input:focus {
+  outline: 0;
+}
+
+.search-bar input:focus::placeholder {
+  color: transparent;
+}
+
+.search-bar ::placeholder {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: black;
 }
 
 /* On definis la taille de police et l'espacement avec le texte selon la maquette */
 
-.search-label h1 {
+.headline h1 {
   font-size: 22px;
   margin: 0;
   padding-bottom: 8px;
 }
 
-.search-label p {
+.headline p {
   font-size: 16px;
   margin: 0;
 }
 /* On fais le style de la zone avec l'icone */
 .geo-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50px;
   height: 49px;
   background: #f2f2f2;
-  border: 1px solid #f2f2f2;
   border-radius: 15px 0px 0px 15px;
 }
+
 /* On travaille le style du button */
 .search button {
   width: 132px;
@@ -127,6 +151,7 @@ a {
   font-weight: 700;
   font-size: 18px;
 }
+
 /* On fais le style des boutons */
 .filter-button {
   border: 2px solid #d9d9d9;
@@ -136,6 +161,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 /* on passe la zone infos en flex pour placer l'icone et le texte */
@@ -147,6 +173,9 @@ a {
 }
 /* On stylise la case de l'icone info */
 .info-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   width: 24px;
   height: 24px;

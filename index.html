@@ -43,30 +43,47 @@
       <main>
         <!-- On creer la zone de recherche -->
         <div class="search">
-          <div class="search-label">
+          <div class="headline">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
           </div>
 
           <!-- On creer la barre de recherche -->
-          <div class="search-bar">
+          <form action="" method="get" class="search-bar">
             <!-- On creer la case pour l'icone -->
-            <div class="geo-icon"></div>
-            <input type="search" id="site-search" name="q" />
+            <div class="geo-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <input
+              type="search"
+              id="site-search"
+              name="q"
+              placeholder="Marseille, France"
+            />
             <button>Rechercher</button>
-          </div>
+          </form>
 
           <!-- On creer la zone de filtres -->
           <div class="filtres">
             <span>Filtres</span>
-            <a href="#" class="filter-button">Economique</a>
-            <a href="#" class="filter-button">Familial</a>
-            <a href="#" class="filter-button">Romantique</a>
-            <a href="#" class="filter-button">Nos Pépites</a>
+            <a href="#" class="filter-button"
+              ><i class="fa-sharp fa-solid fa-money-bill-wave"></i>Economique</a
+            >
+            <a href="#" class="filter-button"
+              ><i class="fa-solid fa-person"></i>Familial</a
+            >
+            <a href="#" class="filter-button"
+              ><i class="fa-solid fa-heart"></i>Romantique</a
+            >
+            <a href="#" class="filter-button"
+              ><i class="fa-solid fa-fire"></i>Nos Pépites</a
+            >
           </div>
           <!-- On creer la zone infos -->
           <div class="infos">
-            <div class="info-icon"></div>
+            <div class="info-icon">
+              <i class="fa-solid fa-info"></i>
+            </div>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
           </div>
         </div>
