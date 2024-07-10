@@ -35,17 +35,29 @@ nav img {
 /* on passe le menu avec les 2 liens en flex et corrige l'alignement en haut et le gap comme la maquette */
 .menu {
   display: flex;
-  padding: 0 50px;
   gap: 68px;
-  align-self: flex-start;
-  padding-top: 16px;
+
+  height: 35px;
+
 }
 
 .menu a {
   font-weight: 400;
   font-size: 16px;
   color: #000000;
+  align-self: flex-end;
 }
+
+.menu span {
+  display: flex;
+  height: 35px;
+  line-height: 18.78px;
+}
+
+.menu span:hover {
+  border-top: solid 2px #0065fc;
+}
+
 
 .main-container {
   width: 100%;
@@ -65,7 +77,7 @@ nav img {
 /* On passe la search bar en flex pour gerer les 3 elements */
 .search-bar {
   display: flex;
-  width: 377px;
+  width: 28%;
   height: 49px;
   background: #ffffff;
   border: 1px solid #f2f2f2;
@@ -74,17 +86,21 @@ nav img {
 /* On enleve la bordure par defaut de l'input de recherche et on le stylise */
 .search-bar input {
   border: none;
-  width: 195px;
+  width: 55%;
   height: 49px;
   font-size: 18px;
   font-weight: 700;
   color: black;
-  text-indent:20px;
+  text-indent: 20px;
 }
 
 /* On retire la bordure noire au focus */
 .search-bar input:focus {
   outline: 0;
+}
+
+.search-bar button{
+  cursor: pointer;
 }
 
 .search-bar input:focus::placeholder {
@@ -115,7 +131,7 @@ nav img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
+  width: 14%;
   height: 49px;
   background: #f2f2f2;
   border-radius: 15px 0px 0px 15px;
@@ -123,7 +139,7 @@ nav img {
 
 /* On travaille le style du button */
 .search button {
-  width: 132px;
+  width: 36%;
   height: 49px;
   border: none;
   background-color: #0065fc;
@@ -157,11 +173,15 @@ a {
   border: 2px solid #d9d9d9;
   border-radius: 25px;
   height: 50px;
-  width: 170px;
+  width: 13%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.filter-button:hover {
+  background: #deebff;
 }
 
 /* on passe la zone infos en flex pour placer l'icone et le texte */
