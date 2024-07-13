@@ -39,7 +39,6 @@ nav img {
   gap: 68px;
 
   height: 35px;
-
 }
 
 .menu a {
@@ -59,7 +58,6 @@ nav img {
 .menu span:hover {
   border-top: solid 2px #0065fc;
 }
-
 
 .main-container {
   width: 100%;
@@ -102,7 +100,7 @@ nav img {
   outline: 0;
 }
 
-.search-bar button{
+.search-bar button {
   cursor: pointer;
 }
 
@@ -273,42 +271,43 @@ a {
 .hebergements-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 207px 207px;
-  gap: 30px;
   justify-items: center;
 }
 
 .hebergements-cards .card {
   display: flex;
   margin-top: 33px;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .hebergements-cards img {
-  width: 33%;
-  height: 136px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  width: 250.33px;
+  height: 124px;
+  border-radius: 20px 20px 0px 0px;
+  border: 5px 0px 0px 0px;
 }
 
 .hebergements-cards .card-content {
-  width: 67%;
   padding-left: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
+  gap: 8px;
 }
 
-.populaires-cards .card-title {
+.hebergements-cards .card-title {
   margin-top: 10px;
-  margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
+.hebergements-cards .card-subtitle {
   margin: 0;
+  font-size: 14px;
+  font-weight: 400;
 }
 
-.populaires-cards .card-rating {
+.hebergements-cards .card-rating {
   margin-bottom: 5px;
 }
 
