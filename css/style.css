@@ -387,13 +387,15 @@ a {
   padding: 30px;
 }
 
-.activites-cards .card {
+.activites-cards a {
+  width: 100%;
   background-color: white;
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  width: 297.5px;
   height: 439px;
+  width: 100%;
 }
+
 
 .activites-cards img {
   width: 100%;
@@ -420,7 +422,47 @@ a {
 footer {
   height: 163px;
   background: var(--main-bg-color);
-  padding-top: ;
+  display: flex;
+justify-content: space-between;
+}
+
+footer h3, p {
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+
+footer h3{
+font-size: 1.125rem;
+padding: 20px 0 0 20px;
+}
+
+footer a{
+  font-size: medium;
+  font-weight: normal;
+  padding-left: 20px;
+}
+
+footer li{
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+footer ul{
+padding: 0;
+margin: 15px 0 20px 0;
+}
+
+.apropos{
+  width: 33%;
+}
+
+.noshebergements{
+  width: 33%;
+}
+
+.assistance{
+  width: 33%;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
