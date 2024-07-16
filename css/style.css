@@ -37,13 +37,12 @@ nav img {
 .menu {
   display: flex;
   gap: 68px;
-
   height: 35px;
 }
 
 .menu a {
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: normal;
+  font-size: 1rem;
   color: #000000;
   align-self: flex-end;
 }
@@ -56,7 +55,7 @@ nav img {
 }
 
 .menu span:hover {
-  border-top: solid 2px #0065fc;
+  border-top: solid 2px var(--main-color);
 }
 
 .main-container {
@@ -79,7 +78,7 @@ nav img {
   display: flex;
   width: 28%;
   height: 49px;
-  background: #ffffff;
+  background: var(--main-bg-color);
   border-radius: 15px;
 }
 /* On enleve la bordure par defaut de l'input de recherche et on le stylise */
@@ -87,12 +86,12 @@ nav img {
   border: none;
   width: 55%;
   height: 49px;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 1.125rem;
+  font-weight: bold;
   color: black;
   text-indent: 20px;
-  border-top: 1px solid #f2f2f2;
-  border-bottom: 1px solid #f2f2f2;
+  border-top: 1px solid var(--main-bg-color);
+  border-bottom: 1px solid var(--main-bg-color);
 }
 
 /* On retire la bordure noire au focus */
@@ -109,8 +108,8 @@ nav img {
 }
 
 .search-bar ::placeholder {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 1.125rem;
+  font-weight: bold;
   text-align: center;
   color: black;
 }
@@ -118,13 +117,13 @@ nav img {
 /* On definis la taille de police et l'espacement avec le texte selon la maquette */
 
 .headline h1 {
-  font-size: 22px;
+  font-size: 1.375rem;
   margin: 0;
   padding-bottom: 8px;
 }
 
 .headline p {
-  font-size: 16px;
+  font-size: 1rem;
   margin: 0;
 }
 /* On fais le style de la zone avec l'icone */
@@ -134,7 +133,7 @@ nav img {
   align-items: center;
   width: 14%;
   height: 49px;
-  background: #f2f2f2;
+  background: var(--main-bg-color);
   border-radius: 15px 0px 0px 15px;
 }
 
@@ -143,10 +142,10 @@ nav img {
   width: 36%;
   height: 49px;
   border: none;
-  background-color: #0065fc;
+  background-color: var(--main-color);
   border-radius: 0px 15px 15px 0px;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 1.125rem;
+  font-weight: bold;
   text-align: center;
   color: white;
 }
@@ -159,14 +158,14 @@ nav img {
 }
 .filtres p,
 a {
-  font-weight: 700;
-  font-size: 17px;
+  font-weight: bold;
+  font-size: 1.063rem;
 }
 
 .filtres span,
 a {
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: bold;
+  font-size: 1.125rem;
 }
 
 /* On fais le style des boutons */
@@ -205,8 +204,7 @@ a {
 }
 
 .info-icon p {
-  font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   color: black;
 }
 
@@ -236,7 +234,7 @@ a {
 }
 
 .euro {
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .neutral-star {
@@ -267,8 +265,8 @@ a {
 }
 
 .hebergements-showmore a {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 1.125rem;
+  font-weight: bold;
 }
 
 .hebergements-title {
@@ -321,8 +319,8 @@ a {
 
 .hebergements-cards .card-subtitle {
   margin: 0;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 0.875rem;
+  font-weight: normal;
 }
 
 .hebergements-cards .card-rating {
@@ -375,13 +373,54 @@ a {
 }
 
 .activites {
-  height: 559.02px;
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 0 35px 0;
 }
+
+.activites-cards {
+  display: flex;
+  box-sizing: border-box;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.activites-cards .card {
+  background-color: white;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  width: 297.5px;
+  height: 439px;
+}
+
+.activites-cards img {
+  width: 100%;
+  height: 380px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.activites-cards .card-title {
+  padding-left: 19px;
+}
+
+.activites-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 0 30px;
+}
+
+.activites-title h2 {
+  margin: 0;
+}
+
 /* On definis la hauteur et la couleur de la zone footer */
 footer {
   height: 163px;
-  background: #f2f2f2;
+  background: var(--main-bg-color);
+  padding-top: ;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
