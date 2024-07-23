@@ -58,6 +58,10 @@ nav img {
   border-top: solid 2px var(--main-color);
 }
 
+.menu a:hover {
+  color: #0065FC;
+}
+
 .main-container {
   width: 100%;
   max-width: 1440px;
@@ -308,7 +312,7 @@ a {
 }
 
 .hebergements-cards a {
-width: 100%;
+  width: 100%;
 }
 
 .hebergements-cards .card-title {
@@ -509,8 +513,14 @@ footer ul {
     height: 200px;
     min-height: 0;
   }
-
-
+  .activites-cards .card-title {
+    padding-left: 19px;
+    height: 38px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  
 }
 
 /* Small devices (phones, less than 768px) */
@@ -519,4 +529,94 @@ footer ul {
   .hebergements-cards {
     grid-template-columns: 1fr;
   }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 68px;
+    height: 35px;
+    width: 100%;
+  }
+  
+  .menu span {
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    line-height: 18.78px;
+    border-bottom: solid 2px white;
+    border-top: none ;
+    width: 50%;
+    margin-top: 30px;
+  }
+
+  .menu a {
+    align-self: flex-start;
+  }
+
+  .menu span:hover {
+    border-bottom: solid 2px var(--main-color);
+    border-top: none;
+  }
+
+  .search {
+    align-items: center;
+    padding-top: 66px;
+  }
+
+  .search-bar{
+    width: 100%;
+  }
+
+  /* On enleve la bordure par defaut de l'input de recherche et on le stylise */
+  .search-bar input {
+    border: none;
+    width: 81%;
+    height: 49px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: black;
+    text-indent: 20px;
+    border-top: 1px solid var(--main-bg-color);
+    border-bottom: 1px solid var(--main-bg-color);
+  }
+
+  
+  .search-bar ::placeholder {
+    text-align: left;
+  }
+
+  .search button {
+    width: 49px;
+    height: 49px;
+    border-radius: 0px 15px 15px 0px;
+    text-align: center;
+    color: white;
+  }
+
+  .geo-icon{
+    width: 49px;
+    height: 49px;
+  }
+
+  .search button span{
+    display: none;
+  }
+
+  .headline h1{
+    width: 335px;
+  }
+
+  .main-container {
+    width: 100%;
+    max-width: 768px;
+    padding: 0 20px;
+  }
+
 }
