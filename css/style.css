@@ -577,6 +577,7 @@ footer ul {
   .search {
     align-items: center;
     gap: 20px;
+    height: 377px;
   }
 
   .search-bar {
@@ -632,8 +633,8 @@ footer ul {
   }
 
   .filtres {
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     height: 161px;
     width: 335px;
   }
