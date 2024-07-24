@@ -535,6 +535,10 @@ footer ul {
     grid-template-columns: 1fr;
   }
 
+  header {
+    height: auto;
+  }
+
   header nav {
     display: flex;
     flex-direction: column;
@@ -548,6 +552,7 @@ footer ul {
     gap: 68px;
     height: 35px;
     width: 100%;
+    margin-top: 30px;
   }
 
   .menu span {
@@ -558,7 +563,6 @@ footer ul {
     border-bottom: solid 2px white;
     border-top: none;
     width: 50%;
-    margin-top: 30px;
   }
 
   .menu a {
@@ -572,7 +576,7 @@ footer ul {
 
   .search {
     align-items: center;
-    padding-top: 66px;
+    gap: 20px;
   }
 
   .search-bar {
@@ -627,8 +631,24 @@ footer ul {
     display: none;
   }
 
+  .filtres {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 161px;
+    width: 335px;
+  }
+
+  .filtres span {
+    display: flex;
+    justify-self: flex-start;
+  }
+
   .headline h1 {
     width: 335px;
+  }
+
+  .hebergements-and-populaires {
+    margin-top: 300px;
   }
 
   .main-container {
