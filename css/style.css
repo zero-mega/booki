@@ -574,6 +574,10 @@ footer ul {
     border-top: none;
   }
 
+  .fa-location-dot{
+    color: #000000;
+  }
+
   .search {
     align-items: center;
     gap: 20px;
