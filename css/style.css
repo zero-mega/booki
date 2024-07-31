@@ -1,4 +1,4 @@
-/****** General ***********/
+/***** General *****/
 * {
   font-family: "Raleway", sans-serif;
 }
@@ -27,22 +27,48 @@ body {
   box-sizing: border-box;
 }
 
-/* On fixe la hauteur du header */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 22px;
+}
+
+.card img {
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 16px;
+}
+
+.euro {
+  font-weight: bold;
+}
+
+.neutral-star {
+  color: var(--main-bg-color);
+}
+
+/***** Header & Menu *****/
 header {
   height: 79px;
 }
-/* On passe le nav en flex row et on aligne les items au centre pour occuper la largeur */
+
 header nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-/* On met un padding de 30 au logo comme sur la maquette */
+
 nav img {
   padding-top: 30px;
 }
-/* on passe le menu avec les 2 liens en flex et corrige l'alignement en haut et le gap comme la maquette */
+
 .menu {
   display: flex;
   gap: 68px;
@@ -71,7 +97,7 @@ nav img {
   color: #0065fc;
 }
 
-/* On passe la zone search en flex column */
+/***** Search *****/
 .search {
   height: 281px;
   display: flex;
@@ -79,7 +105,6 @@ nav img {
   gap: 35px;
 }
 
-/* On passe la search bar en flex pour gerer les 3 elements */
 .search-bar {
   display: flex;
   width: 370px;
@@ -87,7 +112,7 @@ nav img {
   background: var(--main-bg-color);
   border-radius: 15px;
 }
-/* On enleve la bordure par defaut de l'input de recherche et on le stylise */
+
 .search-bar input {
   border: none;
   width: 55%;
@@ -100,7 +125,6 @@ nav img {
   border-bottom: 1px solid var(--main-bg-color);
 }
 
-/* On retire la bordure noire au focus */
 .search-bar input:focus {
   outline: 0;
 }
@@ -124,8 +148,6 @@ nav img {
   color: black;
 }
 
-/* On definis la taille de police et l'espacement avec le texte selon la maquette */
-
 .headline h1 {
   font-size: 1.375rem;
   margin: 0;
@@ -136,8 +158,8 @@ nav img {
   font-size: 1rem;
   margin: 0;
 }
-/* On fais le style de la zone avec l'icone */
-.geo-icon {
+
+.location-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,7 +169,6 @@ nav img {
   border-radius: 15px 0px 0px 15px;
 }
 
-/* On travaille le style du button */
 .search button {
   width: 36%;
   height: 49px;
@@ -159,31 +180,30 @@ nav img {
   text-align: center;
   color: white;
 }
-/* On passe la zone en flex pour placer les boutons */
-.filtres {
+
+/***** Filters *****/
+.filters {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-.filtres p,
-.filtres a {
+.filters p,
+.filters a {
   font-weight: bold;
   font-size: 1.063rem;
 }
 
-.filtres span,
-.filtres a {
+.filters span,
+.filters a {
   font-weight: bold;
   font-size: 1.125rem;
 }
 
-/* On fais le style des boutons */
 .filter-button {
   border: 2px solid #d9d9d9;
   border-radius: 25px;
   height: 50px;
   width: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -194,14 +214,13 @@ nav img {
   background: #deebff;
 }
 
-/* on passe la zone infos en flex pour placer l'icone et le texte */
 .infos {
   display: flex;
   align-items: center;
   height: 24px;
   gap: 10px;
 }
-/* On stylise la case de l'icone info */
+
 .info-icon {
   display: flex;
   justify-content: center;
@@ -218,33 +237,7 @@ nav img {
   color: black;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.section-title {
-  margin: 0;
-  font-size: 22px;
-}
-
-.card img {
-  object-fit: cover;
-}
-
-.card-title {
-  font-size: 16px;
-}
-
-.euro {
-  font-weight: bold;
-}
-
-.neutral-star {
-  color: var(--main-bg-color);
-}
-
-/****** Hebergements And Populaires ***********/
+/***** Hebergements And Populaires *****/
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
@@ -258,7 +251,7 @@ a {
   box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/***** Hebergements *****/
 .hebergements {
   display: flex;
   flex-direction: column;
@@ -267,15 +260,15 @@ a {
   width: 65%;
 }
 
-.hebergements-showmore a {
-  font-size: 1.125rem;
-  font-weight: bold;
-}
-
 .hebergements-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.hebergements-showmore a {
+  font-size: 1.125rem;
+  font-weight: bold;
 }
 
 .hebergements-cards {
@@ -334,7 +327,7 @@ a {
   margin-bottom: 5px;
 }
 
-/****** Populaires ***********/
+/***** Populaires *****/
 .populaires {
   width: 32%;
 }
@@ -383,10 +376,22 @@ a {
   margin-bottom: 5px;
 }
 
+/***** Activités *****/
 .activites {
   display: flex;
   flex-direction: column;
   padding: 35px 0 35px 0;
+}
+
+.activites-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 0 30px;
+}
+
+.activites-title h2 {
+  margin: 0;
 }
 
 .activites-cards {
@@ -416,18 +421,7 @@ a {
   padding-left: 19px;
 }
 
-.activites-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 0 0 30px;
-}
-
-.activites-title h2 {
-  margin: 0;
-}
-
-/* On definis la hauteur et la couleur de la zone footer */
+/***** Footer *****/
 footer {
   height: 163px;
   background: var(--main-bg-color);
@@ -475,9 +469,7 @@ footer ul {
   width: 33%;
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
-
-/****** Media queries ***********/
+/***** Media queries *****/
 
 /* Medium devices (tablets, less/equal than 1024px) */
 
@@ -529,8 +521,10 @@ footer ul {
 /* Small devices (phones, less than 768px) */
 
 @media (max-width: 768px) {
-  .hebergements-cards {
-    grid-template-columns: 1fr;
+  .main-container {
+    width: 100%;
+    max-width: 768px;
+    padding: 0;
   }
 
   header {
@@ -574,6 +568,10 @@ footer ul {
 
   .fa-location-dot {
     color: #000000;
+  }
+
+  .headline h1 {
+    width: 100%;
   }
 
   .search {
@@ -628,7 +626,7 @@ footer ul {
     display: block;
   }
 
-  .geo-icon {
+  .location-icon {
     width: 49px;
     height: 49px;
   }
@@ -640,7 +638,7 @@ footer ul {
     display: none;
   }
 
-  .filtres {
+  .filters {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
@@ -648,13 +646,9 @@ footer ul {
     row-gap: 20px;
   }
 
-  .filtres span {
+  .filters span {
     display: flex;
     justify-self: flex-start;
-  }
-
-  .headline h1 {
-    width: 100%;
   }
 
   .hebergements-and-populaires {
@@ -668,6 +662,10 @@ footer ul {
 
   .hebergements {
     background-color: white !important;
+  }
+
+  .hebergements-cards {
+    grid-template-columns: 1fr;
   }
 
   .populaires {
@@ -697,12 +695,6 @@ footer ul {
 
   .activites-cards img {
     height: 140px;
-  }
-
-  .main-container {
-    width: 100%;
-    max-width: 768px;
-    padding: 0;
   }
 
   footer {
