@@ -76,7 +76,6 @@ nav img {
 }
 
 .menu a {
-  font-weight: normal;
   font-size: 1rem;
   color: #000000;
   align-self: flex-end;
@@ -187,14 +186,10 @@ nav img {
   align-items: center;
   gap: 15px;
 }
-.filters p,
-.filters a {
-  font-weight: bold;
-  font-size: 1.063rem;
-}
 
-.filters span,
-.filters a {
+.filters p,
+.filters a,
+.filters span {
   font-weight: bold;
   font-size: 1.125rem;
 }
@@ -320,7 +315,6 @@ nav img {
 .hebergements-cards .card-subtitle {
   margin: 0;
   font-size: 0.875rem;
-  font-weight: normal;
 }
 
 .hebergements-cards .card-rating {
@@ -442,7 +436,6 @@ footer h3 {
 
 footer a {
   font-size: medium;
-  font-weight: normal;
   padding-left: 20px;
 }
 
