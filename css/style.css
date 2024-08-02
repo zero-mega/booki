@@ -93,7 +93,7 @@ nav img {
 }
 
 .menu a:hover {
-  color: #0065fc;
+  color: var(--main-color);
 }
 
 /***** Search *****/
